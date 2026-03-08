@@ -2,6 +2,7 @@
 
 import { ExternalLink, Github, Folder } from "lucide-react"
 
+// We put your hardcoded projects right back where they belong!
 const projects = [
   {
     title: "Fake News Detector",
@@ -78,7 +79,7 @@ function ProjectCard({
 
       {/* Tags */}
       <ul className="flex flex-wrap gap-2" aria-label="Technologies used">
-        {project.tags.map((tag) => (
+        {project.tags.map((tag: string) => (
           <li
             key={tag}
             className="rounded-full bg-secondary px-3 py-1 font-mono text-xs text-primary"
@@ -88,10 +89,11 @@ function ProjectCard({
         ))}
       </ul>
     </article>
-  )
+  ) // <--- Fixed the missing closing parenthesis here!
 }
 
-export function Projects() {
+// We removed the props here so it just uses your local array above
+export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6">
       <div className="mx-auto max-w-6xl">
