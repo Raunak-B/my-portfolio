@@ -34,11 +34,11 @@ export function Contact() {
         <div className="mb-10 flex items-center justify-center gap-8 text-sm text-muted-foreground">
           <span className="flex items-center gap-2">
             <Mail className="h-4 w-4 text-primary" />
-            hello@alexchen.dev
+            raunakbhattacharjee7@gmail.com
           </span>
           <span className="flex items-center gap-2">
             <MapPin className="h-4 w-4 text-primary" />
-            San Francisco, CA
+            Assam, India
           </span>
         </div>
 
